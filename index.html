@@ -1,0 +1,1275 @@
+<!doctype html>
+<html ⚡ lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Eternal Expression</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-autocomplete" src="https://cdn.ampproject.org/v0/amp-autocomplete-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async custom-element="amp-bodymovin-animation" src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
+  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/examples/introduction/hello_world/index.html">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <meta name="viewport" content="width=device-width">
+  <style amp-custom>
+    @font-face {
+      font-family: 'Eternal Expression';
+      font-style: ultralight;
+      font-weight: 200;
+      src: local('Eternal Expression'), url(https://www.tattoobangalore.com/fonts/Eternal-Expression/EternalExpression-Ultralight.ttf) format('truetype');
+    } 
+    @font-face {
+      font-family: 'Eternal Expression';
+      font-style: light;
+      font-weight: 300;
+      src: local('Eternal Expression'), url(https://www.tattoobangalore.com/fonts/Eternal-Expression/EternalExpression-Light.ttf) format('truetype');
+    }
+     @font-face {
+      font-family: 'Eternal Expression';
+      font-style: medium;
+      font-weight: 400;
+      src: local('Eternal Expression'), url(https://www.tattoobangalore.com/fonts/Eternal-Expression/EternalExpression-Medium.ttf) format('truetype');
+    }
+     @font-face {
+      font-family: 'Eternal Expression';
+      font-style: bold;
+      font-weight: 600;
+      src: local('Eternal Expression'), url(https://www.tattoobangalore.com/fonts/Eternal-Expression/EternalExpression-Bold.ttf) format('truetype');
+    }
+    body{
+      background-color: rgb(19, 19, 19);
+      font-family:"Eternal Expression", Gadget, sans-serif;
+    }
+    header
+    {
+      height:10vh;
+      width:100vw;
+      display:flex;
+      justify-content:space-around;
+      z-index:100;
+      position:fixed;
+      top:0;
+      overflow:hidden;
+    } 
+    footer
+    {
+      height:16.09vh;
+      width:80vw;
+      display:none;
+      justify-content:space-around;
+      background-color:#c9b180;
+      border-top:#c9b180 6px groove;
+      z-index:16;
+      position:fixed;
+      bottom:0;
+      overflow:hidden;
+      border-radius: 14.44px 14.44px 0px 0px;
+      margin:0 10vw ;
+    }
+    h1 {
+     color:white;
+     text-align:center;
+      text-transform:uppercase;
+      font-size:24px;
+      font-weight:300;
+      margin-top: 69.1px;
+      padding:44vh 0 0vh 0;
+      letter-spacing:3.33px;
+    }
+    h2 {
+    font-size: 1.69em;
+letter-spacing: .169em;
+font-weight: 300;
+line-height: 1.69;
+      color: #26292c;
+      font-family: "Times New Roman",Times,serif;
+      text-transform:uppercase;
+}
+    .hero {
+      height:100vh;
+      width:100vw;
+      background: url(http://images.fineartamerica.com/images-medium-large/starry-night-alex-ruiz.jpg) 
+      background-image: url("https://tattoobangalore.com/wp-content/uploads/best-tattoo-artist-in-bangalore-review-2-1.mp4");
+      background-attachment:scroll;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-size:cover;
+       margin-top:-69px;
+    }
+     .h-logo {
+      height:10vh;
+      width:100vw;
+      background-image:url("https://www.tattoobangalore.com/wp-content/uploads/eternal-expression-tattoos-logo-small.webp");
+      background-repeat:no-repeat;
+      background-size:contain;
+      margin-left:44vw;
+      
+    }
+    .story-gall {
+      display: flex;
+      justify-content:space-around;
+      text-align:center;
+      color:#d6d6d6;
+      text-transform:uppercase;
+      font-size:9px;  
+      letter-spacing: .1069vw;
+      font-weight:300;
+      width:84vw;
+      max-width:444px;
+      margin:auto;
+      padding-top:9.16em;
+    }
+    .story-gall amp-img{
+      border-radius:69px;
+      box-shadow: 0 0 0 .1096em greenyellow;
+      border: .1609em solid rgba(240,248,255,0);
+    }
+    amp-selector.story-gall [selected] {
+      opacity:.69;
+      outline:none;
+    }
+    amp-selector.story-gall [selected] amp-img{
+      box-shadow: 0 0 0 .1096em orange;
+      border: .1609em solid rgba(240,248,255,0);
+    }
+    .toolbar {
+      display: flex;
+      justify-content:space-evenly;
+      color:antiquewhite;
+      position:fixed;
+      text-transform:uppercase;
+      font-size:10px; 
+      text-align:center;
+      background-color:black;
+      border-radius:9px;
+      margin-top:0.196%;
+    }
+    .toolbar amp-img{
+      padding:1.096px;
+      box-shadow: 0 0 0 .1096em #c9b180;
+      border-radius:9px;
+      border: 0.609vw solid rgba(240,248,255,0);
+      
+    }
+    amp-selector.toolbar [selected] {
+      opacity:.69;
+      outline:none;
+      color:gold;
+    }
+    amp-selector.toolbar [selected] amp-img{
+      box-shadow: 0 0 0 .1096em gold;
+      border: .1609em solid rgba(240,248,255,0);
+    }
+    .awards{
+      text-transform:uppercase;
+      font-size:19px;   
+      font-weight:100;
+      padding-bottom:19px;
+      text-align:center;
+    }
+     #custom-button .amp-carousel-button-prev {
+      left: 5%;
+      background-image: url('https://amp.dev/static/samples/img/carousel-arrow-left.png');
+     border-radius:69px;
+      background-color:black;
+      height:60px;
+      width:19px; 
+    }
+    #custom-button .amp-carousel-button-next {
+      right: 5%;
+      background-image: url('https://amp.dev/static/samples/img/carousel-arrow-right.png');
+      border-radius:69px;
+      background-color:black;
+      height:60px;
+      width:19px;      
+    }
+    h2.cta-mod.cta-tlt {
+      text-transform:uppercase;
+      font-size:19px;   
+      font-weight:900;
+      padding-bottom:19px;
+      text-align:center;
+    }
+    
+      .spacer {   
+      width :84vw;
+      background-color:#eeeeee;
+      margin:auto;
+      margin-top:5vh;
+      border-radius:19px;
+      padding:10px
+    }
+      .press-gall {
+      display: flex;
+      justify-content:space-evenly;
+	  flex-wrap: wrap; 
+    }
+     amp-img.press-gall {
+       margin:1vw;
+       max-width:90px;
+       max-height:90px;   
+    }
+    h4.press-gall-title {
+	   font-size: .619em;
+	   color: rgba(109,109,109,.69);
+	   letter-spacing: .169em;
+	   font-weight: 300;
+	   line-height: 1.69;
+	   padding: 10px 1px;
+	   box-shadow: 0 4px 4px 4px rgba(196,196,196,.24) inset,0 -4px 4px 4px rgba(255,255,255,.2) inset;
+	   border-radius: 10.96px;
+	   border: inset .196em rgba(255,209,73,.76);
+	   margin: 6.9px;
+	   text-shadow: 1px 1px 1.6px rgba(255,255,255,.99);
+       text-transform:uppercase;
+       text-align:center;
+    }
+    .services
+    {
+      padding-top:19px
+    }
+      .service-txt{
+	color: white;
+    font-family: "Eternal Expression",serif;
+    margin: 60px 19px;
+    position:relative;
+      }
+	h2.service {
+  
+	font-weight: 300;
+	letter-spacing: 1.69px;
+	text-shadow: 0px 0px 6px rgba(240,169,60,1);
+      color:white;
+
+}
+    	h4 {
+font-size: .691em;
+color: #26292c;
+letter-spacing: .0691em;
+font-weight: 300;
+line-height: 1.6;
+padding: 16.9px 1.069em;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+      .service-txt h3 {
+    text-transform: uppercase;
+	box-shadow: 0 9px 16px 1px rgba(0,0,0,.44);
+	border-radius: 6.019px;
+	padding: 1.96px 0px 0px 10px;
+	max-width: 16.09em;
+	font-size: .691em;
+	margin-top: -1.69em;
+	margin-bottom: 1.069em;
+	font-weight: 400;
+	color: rgba(41,41,41,.69);
+	letter-spacing: 1px;
+	text-shadow: .69px .69px 1px rgba(240,240,240,.24);
+    background-color: #aa8b4d;
+	border: 1px outset gold;
+    margin-top: -240px;   
+}
+      .service-txt p {
+	font-size: 10.96px;
+	letter-spacing: .196px;
+    font-weight:200;
+}
+      .service-btn {
+	display: inline-block;
+	box-sizing: initial;
+	border-radius: 9.106px;
+	border: groove 1px #aa8b4d;
+	font-size: 16px;
+	background: rgba(69,69,69,0);
+	padding: 4px 6px 4px 19px;
+    text-decoration: none;
+	color: #aa8b4d;
+	min-width:200px;
+	max-width:300px;
+    box-shadow: 0 10px 6px rgba(0,0,0,.19);
+	letter-spacing: .169em;
+	max-width: 333px;
+	min-width: 240px;
+    font-weight: 300;
+}
+       amp-img.cslide{
+	border-radius:19px;
+}
+     .slide-gall {
+	display: flex;
+	justify-content:space-around;
+	text-align:center;
+	color:#d6d6d6;
+	text-transform:uppercase;
+	font-size:0.691em;  
+	letter-spacing: .1069em;
+	font-weight:600;
+	margin:24px auto;
+}
+    .slide-txt{
+	padding-top:10px;
+	margin-bottom:24px;
+}
+    .sa-gall{
+	border-radius: 33px;
+	max-width: 444px;
+	margin: auto auto 50px auto;
+	border: groove 1.96px;
+	width: 90%;
+	background: linear-gradient(to top,#14e480,#4f8894 6.72%,#528395 68.07%,#9d50f5 90.76%,#943cf7 94.96%);
+	box-shadow: 0 16px 19px 10px rgba(60,60,60,.69) inset;
+}
+    .sa-slide-cont{
+    display: flex;
+	flex-wrap: wrap;
+	padding: 0 6.9% 6.9% 6.9%;
+    justify-content:space-around;
+}
+    .sa-slide{
+	background: rgba(0,0,0,.19);
+	border-radius: 6px;
+	padding: 1.96% 1.96% 0 1.96%;
+	border: 1px outset antiquewhite;
+	box-shadow: 0 44px 19px -6px rgba(69,19,19,.19),0 6px 60px -19px rgba(255,255,255,.69) inset;
+	margin:1.96%;
+}
+    .btn{
+	max-width: 333px;
+	border-radius: 60px;
+	border-bottom: solid;
+	margin: 33px auto 33px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: inherit;
+	letter-spacing: .0691em;  
+}
+    .btn-txt{
+    font-size: 1.096rem;
+	color: rgba(255,255,255,.69);
+	display: inline-block;
+	font-weight: 400;
+	box-sizing: initial;
+    text-decoration: none;
+    }
+    .btn-desc{
+    letter-spacing: .0619em;
+margin: -19px 16px 60px 16px;
+color: rgba(255,255,255,.41);
+font-size: 10.96px;
+      text-align:center;
+      font-weight: 300;
+    }
+    .discover{
+    background: linear-gradient(#a68f00 57.98%,#f7ce46);
+	border-color: #9e7d08;
+	box-shadow: -1px 17px 19px rgba(195,158,5,.69);
+	color: #d0b431;
+    }
+	.discover-ee{
+	color: darkgrey;
+	max-width: 333px;
+	border-radius: 60px;
+	margin: 0px auto 33px auto;
+	font-weight: 300;
+}
+    .team-ee{
+	border: 9px solid white;
+	box-shadow: 9px 9px 18px #aa9c9c,-9px -9px 18px #fff;
+	border-radius: 60vw;
+	max-width: 961px;
+    margin:9vw; 
+}
+       .venue{ 
+border-radius: 33px;
+box-shadow: 0 1px 19px rgba(0,0,0,.69);
+background: linear-gradient(45deg,#105a0c,#ffff1f);
+margin: -44px auto;
+padding: 44px 0px 9.16vw 0px;
+border: outset 6px #90a916;
+max-width: 961px;
+         text-align:center;
+    }
+        .directions{
+          background: linear-gradient(180deg,#d1ea8b,#25a51d);
+border-color: #0f0;
+letter-spacing: .1069em;
+	box-shadow: 0 6px 19px rgba(0,0,0,.6);
+	color: #0f0;
+          text-decoration: none;
+    }
+            .bookings{
+              padding:16px;
+              max-width:300px;
+          background: linear-gradient(183deg, rgb(255, 20, 0), rgb(33, 32, 32));
+border-color: rgb(247, 59, 59);
+letter-spacing: .1069em;
+	box-shadow: 0 6px 19px rgba(0,0,0,.6);
+	color: white;
+          text-decoration: none;
+    }
+        .workhours {
+display: flex;
+margin-bottom: 10px;
+align-items: center;
+justify-content: center;
+}
+    #weekday {
+background-color: #eaeaea;
+font-size: 16px;
+font-weight: 600;
+height: 1.96em;
+width: 1.96em;
+text-align: center;
+margin-right: 9px;
+color: #b4b4b4;
+border-radius: 6px;
+align-items: center;
+justify-content: center;
+display: flex;
+      font-weight: 400;
+}
+    .worktime {
+font-size: 16px;
+color: #282828;
+font-weight: 500;
+margin-bottom: 10px;
+margin-top: 5px;
+text-align: center;
+}
+    .price-chart{
+    background-image:url("https://www.tattoobangalore.com/wp-content/uploads/2000-currency-inr-6901aynz.webp");
+    color: #bbbbbd;
+       background-attachment:fixed;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-size:cover;
+    } 
+    .pri-mod{
+      width:90%;
+      border-radius:24px;
+      background: rgba(25,6,16,.62);
+      box-shadow: 0 1.6px darkgoldenrod;
+      margin:auto;
+    }
+    .enquire{
+letter-spacing: .6019em;
+background: black;
+color: gold;
+margin: auto;
+border-radius: 33px;
+width: 100%;
+max-width: 333px;
+padding: 10px 44px 10px 44px;
+      text-decoration:none;
+    }
+    .pri-recom {
+	letter-spacing: .333em;
+	transform: rotate(45deg) translate(29.61%,69%);
+	font-size: 11px;
+	position: relative;
+	right: -158px;
+	top: -80px;
+	display: block;
+	font-weight: 700;
+	line-height: 32px;
+	color: #fff;
+	z-index: 1;
+    border-bottom: 32px outset gold;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    height:0;
+    width:160px;
+}
+    .acc-lbl{
+    text-transform:uppercase;
+    text-align:left;
+    color: #7c9a0c;
+	font-size: .619rem;
+	padding: 10px;
+	background-color: rgba(0,0,0,.96);
+	letter-spacing: .0961em;
+	border-radius: 6px;
+	box-shadow: 0 1.9px 6px 0px inset;
+      margin:19px;
+border:none;
+line-height: 1.5em;
+    }
+    .acc-desc{
+      text-align:left;
+padding: 16px 44px;
+color: #666;
+font-size: 14px;
+line-height: 1.5em;
+      background-color: #2f2f2f;  
+    }
+          .hamburger {
+        top: 18px;
+        left: 20px;
+        position: absolute;
+        width: 16.9px;
+        height: 20px;
+      }
+      .hamburger span {
+        display: block;
+        position: absolute;
+        height: 2.4px;
+        width: 100%;
+        background: rgba(166,166,166,1);
+        border-radius: 0.6px;
+      }
+      .hamburger span:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+
+      .hamburger span:nth-child(2) {
+        top: 6px;
+        transform-origin: left center;
+      }
+
+      .hamburger span:nth-child(3) {
+        top: 12px;
+        transform-origin: left center;
+      }
+    h4.sb{
+     background:transparent;
+      border:none;
+      color: rgba(169,169,169,.69);
+      padding: 16px;
+      letter-spacing: .0691em;
+      line-height: 1.69;
+      text-transform: uppercase;
+      font-size: .916em;
+      font-weight: 400;
+    }
+    a.sb{text-decoration: none; color: rgba(169,169,169,.69);}
+    amp-sidebar {
+      width: 400px;
+      padding-right: 10px;
+      background: rgba(0,0,0,.69);
+      padding-top: 19px;
+      }
+      amp-sidebar amp-accordion{
+        padding-top: 12px;
+        padding-left: 12px;
+      }
+      amp-sidebar amp-accordion section{
+        border-bottom: 1px solid rgba(106,106,106,.19);
+      }
+      amp-sidebar amp-accordion section h4{
+        background-color: transparent;
+        border: none;
+        position: relative;
+		display: block;
+		padding: 6px 1px;
+		border-bottom: 1px solid rgba(106,106,106,.19);
+		letter-spacing: .169em;
+		text-align: left;
+		line-height: 1.69;
+		text-transform: uppercase;
+		font-size: .916em;
+		font-weight: 400;
+      }
+      amp-sidebar amp-accordion section h4:focus{
+        outline-width: 0;
+      }
+      amp-sidebar amp-accordion section .amp-sidebar-image {
+        line-height: 100px;
+        vertical-align:middle;
+      }
+      amp-sidebar amp-accordion section ul{
+        padding-left: 24px;
+      }
+      amp-sidebar amp-accordion section li {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        list-style: none;
+        padding:10px 0px;
+      }
+      amp-sidebar amp-accordion section li a{
+        color:#666;
+        text-decoration: none;
+        font-size:16px;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    .flex-center {
+  width: 100%;
+  min-height: 10vh;
+  background: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.icon-3d {
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: lightgrey;
+}
+.icon-3d:hover {
+  -webkit-animation: icon3d 200ms infinite;
+  animation: icon3d 200ms infinite;
+}
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+  }
+  25% {
+    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+  }
+  50% {
+    text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+  }
+  75% {
+    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+  }
+  100% {
+    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+  }
+}
+    a.fa{text-decoration:none;}
+    
+  </style>
+
+<body>
+  <header class="nav-bar top" amp-fx="float-in-top">
+    <div class="hamburger" tabindex="1" role="button" on="tap:sidebar.toggle" aria-label="Click to open sidebar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="h-logo"></div>
+
+  </header>
+  <main>
+    <section [hidden]="tabs !=0" hidden>Tattoo></section>
+    <section [hidden]="tabs !=1" hidden>Piercing</section>
+    <section [hidden]="tabs !=2" hidden>Cosmetic</section>
+    <section [hidden]="tabs !=3" hidden>Training</section>
+  </main>
+  <amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <amp-accordion disable-session-states expand-single-section>
+      <section>
+        <h4 class="sb"><a href="/" class="sb">Home</a></h4>
+        <div></div>
+      </section>
+      <section>
+        <h4 class="sb">Alchemic Tattoo</h4>
+        <ul>
+          <li>
+            <a href="/" class="sb"> Portrait Tattoo</a>
+          </li>
+          <li>
+            <a href="/"> Religious Tattoo</a>
+          </li>
+          <li>
+            <a href="/"> Dotwork Tattoo</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4 class="sb">Esoteric Piercing</h4>
+        <ul>
+          <li>
+            <a href="/">Ear Piercing</a>
+          </li>
+          <li>
+            <a href="/">Nose Piercing</a>
+          </li>
+          <li>
+            <a href="/">Septum Piercing</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4 class="sb">PERMANENT Cosmetic</h4>
+        <ul>
+          <li>
+            <a href="/">SMP</a>
+          </li>
+          <li>
+            <a href="/">Vitiligo</a>
+          </li>
+          <li>
+            <a href="/">Eyebrow</a>
+          </li>
+        </ul>
+      </section>
+      <section><h4 class="sb"><a class="sb" href="/">Training Academy</a></h4><div></div></section>
+      <section><h4 class="sb"><a class="sb" href="/">Testimonials</a></h4><div></div></section>
+      <section><h4 class="sb"><a class="sb" href="/">Contact</a></h4><div></div></section>
+    </amp-accordion>
+    <div class="flex-center">
+      <li> <a title="facebook" class="fa fa-facebook fa-2x icon-3d" target="_blank" href="https://www.facebook.com/tattoobangalore"></a> </li>
+      <li> <a title="twitter" class="fa fa-twitter fa-2x icon-3d" target="_blank" href="https://www.twitter.com/tattoobangalore"> </a> </li>
+      <li> <a title="linkedin" class="fa fa-linkedin fa-2x icon-3d" target="_blank" href="https://www.linkedin.com/company/eternal-expression-tattoo-and-piercing-studio-bangalore"></a> </li>
+      <li> <a title="pinterest" class="fa fa-pinterest fa-2x icon-3d" target="_blank" href="https://www.pinterest.com/tattoobangalore"></a> </li>
+    </div>
+    <div class="flex-center">
+      <li> <a title="youtube" class="fa fa-youtube fa-2x icon-3d" target="_blank" href="https://www.youtube.com/c/tattoobangalore1"></a> </li>
+      <li> <a title="instagram" class="fa fa-instagram fa-2x icon-3d" target="_blank" href="https://www.instagram.com/veerhegde"></a> </li>
+      <li> <a title="tumblr" class="fa fa-tumblr fa-2x icon-3d" target="_blank" href="https://tattoo-artist-in-bangalore.tumblr.com/"></a> </li>
+    </div>
+    <div style="color:lightgrey; text-align:center; font-size:10px; font-weight:100;"><p>© 2022 Eternal Expression</p></div>
+  </amp-sidebar>
+  <div class="hero">
+    <h1>India's only Alchemic Tattooist + voted<br>Best Tattoo Artist in Bangalore<br>since 2010</h1>
+    <amp-selector class="story-gall">
+      <div option=0><a href="https://www.tattoobangalore.com/web-stories/best-tattoo-artist-in-bangalore/">
+          <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/best-tattoo-artist-in-bangalore-at-eternal-expression.webp"></amp-img>
+          <br>
+        </a>Introduction</div>
+      <div option=1><a href="https://www.tattoobangalore.com/web-stories/best-tattoo-artist-in-bangalore/">
+          <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/tattoo-testimonials-best-tattoo-artist-in-bangalore.webp"></amp-img>
+          <br>
+        </a>Testimonials</div>
+      <div option=2><a href="https://www.tattoobangalore.com/web-stories/best-tattoo-artist-in-bangalore/">
+          <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/tattoo-showcase-best-tattoo-artist-in-bangalore.webp"></amp-img>
+          <br>
+        </a>Showcase</div>
+      <div option=3><a href="https://www.tattoobangalore.com/web-stories/best-tattoo-artist-in-bangalore/">
+          <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/best-tattoo-artist-in-bangalore-testimonials.webp"></amp-img>
+          <br>
+        </a>Fun</div>
+    </amp-selector>
+
+  </div>
+  <!-- ## Awards-->
+  <div style="width: 169px; height: 169px; margin: 19px auto -44px auto;">
+    <amp-bodymovin-animation id="animation" layout="responsive" width="96" height="96" noautoplay src="https://assets4.lottiefiles.com/packages/lf20_ag5tg1m5.json" loop="false">
+    </amp-bodymovin-animation>
+    <amp-position-observer on="scroll:animation.seekTo(percent=event.percent)" intersection-ratios="0" layout="nodisplay">
+    </amp-position-observer>
+  </div>
+  <div style="text-align:center;">
+    <h4 class="awards" style="text-align:center; color:#c9b180; letter-spacing: 0.196em; font-weight: 100; margin-bottom: -16px;">Eternal Expression<br>Awards</h4>
+    <div>
+      <amp-carousel id="custom-button" width="340px" height="240px" type="slides" autoplay controls>
+        <a href="https://www.gqindia.com/content/5-tattoo-parlors-you-should-visit-gq-india" target="_blank">
+          <amp-img layout="fixed" alt="Awarded Best Tattoo Artist of Bangalore and India by GQ" width="240" height="240" src="https://www.tattoobangalore.com/wp-content/uploads/best-tattoo-artist-india.webp"></amp-img>
+        </a>
+        <a href="http://tattoobangalore.com/eternal-expression-tattoo-bangalore/best-tattoo-artists-in-india/" target="_blank">
+          <amp-img layout="fixed" alt="Awarded Best Tattoo Artist of Bangalore and India by Hi!BLITZ" width="240" height="240" src="https://www.tattoobangalore.com/wp-content/uploads/hi-blitz-best-tattoo-artist-india.webp"></amp-img>
+        </a>
+        <a href="https://www.facebook.com/tattoobangalore/videos/10150984963271117/" target="_blank">
+          <amp-img layout="fixed" alt="1st 3D Tattoo Artist of Bangalore and India" width="240" height="240" src="https://www.tattoobangalore.com/wp-content/uploads/1st-3d-tattooist-india.webp"></amp-img>
+        </a>
+        <a href="https://web.archive.org/web/20170614230222/http://www.fashionlady.in/top-10-tattoo-artists-in-bangalore/31999" target="_blank">
+          <amp-img layout="fixed" alt="Awarded Best Tattoo Artist in Bangalore by Fashionlady" width="240" height="240" src="https://www.tattoobangalore.com/wp-content/uploads/best-tattoo-artist-bangalore.webp"></amp-img>
+        </a>
+      </amp-carousel>
+    </div>
+  </div>
+  <!-- ## CTA-->
+  <div class="cta-mod" style="text-align:center;">
+    <div class="cta-tlt" style="color:#333; font-size:10.96px; font-weight:300; letter-spacing: 0.0619em; text-transform:uppercase;">Get Inspired!</div>
+    <div class="cta-btn" style="padding:19px;"><a class="btn-txt" style="font-weight:500; padding:10px 19px; width:80vw; border-radius:69px; border:groove 1px grey; text-decoration:none; color:#aa8b4d; max-width:444px;" href="https://api.whatsapp.com/send?phone=919742863993&amp;text=Hey%20Eternal%20Expression!" id=" booking">BOOK APPOINTMENT</a>
+      <br><br> <span class="txt" style="color:rgba(196,190,169,.69);font-weight:200; font-size:10.96px; letter-spacing: 0.0169em;">Book your Appointment with the Best Tattoo Artist in Bangalore!</span>
+    </div>
+  </div>
+  <!-- ## Press gallery -->
+  <div class="spacer">
+    <div>
+      <h4 class="press-gall-title">Best Tattoo Artist in Bangalore &amp; India <br> As Seen on</h4>
+    </div>
+    <div class="press-gall">
+      <a href="https://www.gqindia.com/content/5-tattoo-parlors-you-should-visit-gq-india" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/gq-logo.webp" width="16.9vw" height="10.9vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="https://economictimes.indiatimes.com/magazines/panache/planning-to-get-a-tattoo-here-are-the-things-you-should-keep-in-mind-to-avoid-any-complications/articleshow/58234947.cms" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/economic-times-logo.webp" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="http://indiatoday.intoday.in/story/the-offbeat-wedding-exchanging-vows-in-vineyards-wedding-tattoos-bollywood-tunes/1/509183.html" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/india-today-logo.webp" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="http://www.newindianexpress.com/cities/bengaluru/Getting-Inked-to-Make-a-Point/2015/07/06/article2904054.ece" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/the-new-indian-express-logo.webp" width="16.9vw" height="16vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="https://www.tattoobangalore.com/best-tattoo-artists-in-india/" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/hiblitz-logo.webp" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="https://www.facebook.com/tattoobangalore/videos/10150984963271117/" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/news9-logo.webp" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="https://www.facebook.com/tattoobangalore/videos/10150984963271117/" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/tv9-karnataka-logo.webp" width="16.9vw" height="10.9vw" alt="a sample image"></amp-img>
+      </a>
+      <a href="https://i0.wp.com/www.tattoobangalore.com/wp-content/uploads/VEER-HEGDE-TATTOO-ARTIST-UDAYVANI-KANNADA-NEWSPARE-BANGALORE.jpg" target="_blank">
+        <amp-img class="press-gall" src="https://www.tattoobangalore.com/wp-content/uploads/udayvani-logo.webp" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </a>
+    </div>
+  </div>
+  <!-- ## Services -->
+  <div class="services">
+    <amp-video width="480" height="270" poster="https://www.tattoobangalore.com/wp-content/uploads/sea-turtle-best-tattoo-artist-in-bangalore.webp" layout="responsive" controls autoplay>
+      <div fallback>
+        <p>Your browser doesn't support HTML5 video.</p>
+      </div>
+      <source type="video/mp4" src="https://www.tattoobangalore.com/wp-content/uploads/best-tattoo-artist-in-bangalore-dotwork-sea-turtle-tattoo-by-veer-hegde-at-eternal-expression.mp4">
+    </amp-video>
+
+    <div class="service-txt">
+      <h3 style="margin-top:-260px;">ALCHEMIC TATTOO</h3>
+      <h2 class="service">FINEST TATTOOING</h2>
+      <p><strong>100% Original Body Art creations</strong>&nbsp;that are&nbsp;<strong>Visual Poetry!</strong> Composed &amp; Engineered for each person are&nbsp;<strong>Mesmerising Tattoos</strong>&nbsp;that&nbsp;<strong>Exalt, Inspire, Influence &amp; Heal</strong>; Attractive and radiant with&nbsp;<strong>Great Vibes!</strong></p>
+      <a class="service-btn" href="#best-tattoos-in-bangalore">Selected Tattoos</a>
+      <div class="slide-gall">
+        <amp-carousel id="custom-button" height="350" layout="fixed-height" type="carousel" role="region" aria-label="Basic usage carousel">
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/Davinci-Forearm-sleeve-Tattoo-Artist-Bangalore-Veer-Hegde-scaled.jpg" width="200" height="300" alt="a sample image"></amp-img><br>
+            <div class="slide-txt">Portrait Tattoo</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/mother-mary-portrait-tattoo-bangalore.jpg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Religious Tattoo</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/liverpool-fc-forearm-color-tattoo-bangalore.jpg" width="200" height="300" alt="and another sample image"></amp-img><br>
+            <div class="slide-txt">Colour Tattoo</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/Snow-Leopard-Tattoo-Thigh-Tattoo-Artist-Bangalore-Veer-Hegde-scaled.jpg" width="200" height="300" alt="a sample image"></amp-img><br>
+            <div class="slide-txt">Dotwork Tattoo</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/sri-yantra-1.jpg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Minimal Tattoo</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/liverpool-fc-forearm-color-tattoo-bangalore.jpg" width="200" height="300" alt="and another sample image"></amp-img><br>
+            <div class="slide-txt">Colour Tattoo</div>
+          </div>
+        </amp-carousel>
+      </div>
+    </div>
+
+    <amp-video width="480" height="270" poster="https://www.tattoobangalore.com/wp-content/uploads/sea-turtle-best-tattoo-artist-in-bangalore.webp" layout="responsive" controls autoplay>
+      <div fallback>
+        <p>Your browser doesn't support HTML5 video.</p>
+      </div>
+      <source type="video/mp4" src="https://www.tattoobangalore.com/wp-content/uploads/piercing-in-bangalore-live-review.mp4">
+    </amp-video>
+
+    <div class="service-txt">
+      <h3 style="background-color:#a60196;border: 1px outset #eb4fea;margin-top:-260px;">ESOTERIC PIERCING</h3>
+      <h2 class="service">PAINLESS PIERCING</h2>
+      <p><strong>Painless & Hygienic Piercing</strong>, by a <strong>Highly qualified</strong> crew, with a combined Surgical & Piercing Experience of 35+ years. An exclusive amalgamation of <strong>Modern Surgical tools</strong> & ointments with <strong>Traditional Piercing techniques</strong>.</p>
+      <a class="service-btn" style="color: #a10196;border-color: #a10196;" href="#best-tattoos-in-bangalore">Painless Piercing</a>
+      <div class="slide-gall">
+        <amp-carousel height="350" layout="fixed-height" type="carousel" role="region" aria-label="Basic usage carousel">
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/septum-piercing-in-bangalore-for-meenakshi-rathore-at-eternal-expression-3.jpg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Septum Piercing</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/ear-piercing-in-bangalore-eternal-expression.webp" width="200" height="300" alt="a sample image"></amp-img><br>
+            <div class="slide-txt">Ear Piercing</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/nose-piercing-bangalore.jpg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Nose Piercing</div>
+          </div>
+
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/BELLY-PIERCING-ETERNAL-EXPRESSION-BANGALORE-2-scaled.jpg" width="200" height="300" alt="and another sample image"></amp-img><br>
+            <div class="slide-txt">Belly Piercing</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/Snow-Leopard-Tattoo-Thigh-Tattoo-Artist-Bangalore-Veer-Hegde-scaled.jpg" width="200" height="300" alt="a sample image"></amp-img><br>
+            <div class="slide-txt">Lip Piercing</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/sri-yantra-1.jpg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Eyebrow Piercing</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/liverpool-fc-forearm-color-tattoo-bangalore.jpg" width="200" height="300" alt="and another sample image"></amp-img><br>
+            <div class="slide-txt">Surface Dermal Piercing</div>
+          </div>
+        </amp-carousel>
+      </div>
+    </div>
+
+    <amp-video width="480" height="270" poster="/static/samples/img/tokyo.jpg" layout="responsive" controls autoplay>
+      <div fallback>
+        <p>Your browser doesn't support HTML5 video.</p>
+      </div>
+      <source type="video/mp4" src="https://www.tattoobangalore.com/wp-content/uploads/scalp-micropigmentation-in-bangalore.mp4">
+    </amp-video>
+
+    <div class="service-txt">
+      <h3 style="background-color:SKYBLUE;border:1px outset AQUA;margin-top:-260px;">HYPERREALISTIC COSMETIC</h3>
+      <h2 class="service">PERMANENT MAKEUP</h2>
+      <p><strong>100% Original Body Art creations</strong>&nbsp;that are&nbsp;<strong>Visual Poetry!</strong> Composed &amp; Engineered for each person are&nbsp;<strong>Mesmerising Tattoos</strong>&nbsp;that&nbsp;<strong>Exalt, Inspire, Influence &amp; Heal</strong>; Attractive and radiant with&nbsp;<strong>Great Vibes!</strong></p>
+      <a class="service-btn" style="color: AQUA;border-color: AQUA;" href="#best-tattoos-in-bangalore">Cosmetic Tattoo</a>
+      <div class="slide-gall">
+        <amp-carousel height="350" layout="fixed-height" type="carousel" role="region" aria-label="Basic usage carousel">
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/best-scalp-micropigmentation-bangalore.webp" width="200" height="300" alt="a sample image"></amp-img><br>
+            <div class="slide-txt">Scalp Micropigmentation</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/vitiligo-represantational-image-1024x723.jpeg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Vitiligo Coverup</div>
+          </div>
+          <div>
+            <amp-img class="cslide" src="https://www.tattoobangalore.com/wp-content/uploads/septum-piercing-in-bangalore-for-meenakshi-rathore-at-eternal-expression-3.jpg" width="200" height="300" alt="another sample image"></amp-img><br>
+            <div class="slide-txt">Eyebrow Pigmentation</div>
+          </div>
+        </amp-carousel>
+      </div>
+    </div>
+    <amp-youtube width="480" height="270" layout="responsive" data-videoid="h7ObtPf53pw" autoplay loop data-param-controls=0>
+    </amp-youtube>
+    <div class="service-txt">
+      <h3 style="background-color:lightgreen;border: 1px outset greenyellow;margin-top:-260px;">Training & Academy</h3>
+      <h2 class="service">PROFESSIONAL TRAINING</h2>
+      <p><strong>100% Original Body Art creations</strong>&nbsp;that are&nbsp;<strong>Visual Poetry!</strong> Composed &amp; Engineered for each person are&nbsp;<strong>Mesmerising Tattoos</strong>&nbsp;that&nbsp;<strong>Exalt, Inspire, Influence &amp; Heal</strong>; Attractive and radiant with&nbsp;<strong>Great Vibes!</strong></p>
+      <a class="service-btn" style="color: Greenyellow;border-color: greenyellow;" href="#best-tattoos-in-bangalore">Tattoo Training</a>
+    </div>
+  </div>
+  <!-- ## Studio Amenities -->
+  <div class="sa-gall">
+    <h2 style="color:white; text-align:center;">STUDIO AMENITIES</h2>
+    <div class="sa-slide-cont">
+      <div class="sa-slide">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/private-parking.png" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </div>
+      <div class="sa-slide">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/lounge.png" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </div>
+      <div class="sa-slide">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/high-speed-wifi-1.png" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </div>
+      <div class="sa-slide">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/refreshments-new.png" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </div>
+      <div class="sa-slide">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/smoking-section-9.png" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </div>
+      <div class="sa-slide">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/washrooms.png" width="16.9vw" height="16.9vw" alt="a sample image"></amp-img>
+      </div>
+    </div>
+  </div>
+  <div>
+    <amp-accordion class="discover-ee" animate>
+      <section>
+        <h3 class="btn discover">Discover Eternal Expression</h3>
+        <div>
+
+          <p><span class="f1">N</span>estled at the end of a leafy, serene boulevard, at the crossroads of Richmond Rd and Brigade Rd, is The Famous Tattoo Shop of Bangalore: Le Studio de Tattoo Eternal Expression. Home to the <a href="https://www.tattoobangalore.com/">Best Tattoo Artist In Bangalore</a> and among the leading tattooist in India!</p>
+          <figure>
+            <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/eternal-board100-7-1024x683.jpg" layout="responsive" width="600" height="400"></amp-img>
+            <figcaption>91, Richmond Rd, Ashok Nagar, Bangalore, Karnataka 560025, India</figcaption>
+          </figure>
+          <p>Located at the heart of bustling Bangalore City, our Studio is not too far for anyone to reach, from whichever direction you might be coming! This central location places us right on the pulse of everything good happening in the city – the best shopping, the trendiest pubs, fine dining, and the hottest clubs are all within a 3-mile radius of Us.</p>
+          <p>Once you enter our abode, You will be received, with a rush of Individuality and Positivity, which is what we are all about! Every bit of our space has a personality; every object within it has its history. All the elements come together in harmony, creating an ambience that is warm, welcoming and buzzing with life & energy!</p>
+          <p>When you visit us, bring time to spare; and take a moment to soak it all in. The walls, the ceiling, each work of art is unique, one of a kind. Nothing mass-produced, nothing replicated. Every piece is a testament to our vision! From Buddhist Temple Artists; To freestyle mural artists who have been part of our crew. Each one of our artists has contributed to the creation and evolution of our Studio!</p>
+          <p>In just a few years in the tattoo industry, Veer Hegde, the founder of Eternal Expression, got recognized as the Top Tattoo Artist in Bangalore and India!</p>
+          <p>Eternal Expression got known as the Best Tattoo Studio In Bangalore and India because Tattoos are our Core. They are our Discipline and our Religion! Our work represents the Energy of Life, all the forces that drive us towards a better, happier existence! We stay true to our beliefs while happily embracing new cultures – that is how we grow and evolve!</p>
+          <p>A Household name among the Bangalore Elite when it comes to Tattoos! Veer Hegde is a well-known personality in the Tattoo Industry in India, as the Leading Tattoo Artist in Bangalore, responsible for the inception of 3D tattoos and other modern tattooing genres in Bangalore. Eternal Expression sets high standards for Tattooing and other Body Arts!</p>
+          <p>Believe in constantly Refining and upgrading skills! In over a decade, Eternal Expression has redefined the tattoo culture in Bangalore & India! Consistently creating great tattoos & Piercings have gathered us a huge fan following, both Indian and International!</p>
+          <p>Some of the Best Tattoo Artists in the world visit our place as guest artists and leave behind a signature piece or two as a memoir of the time they spend with us. Our friends observe that the environment is never the same as it was before. It could be a subtle change, like a new addition somewhere. Or it could be a bold move in a whole new direction with vivid splashes of colour.</p>
+          <p>You may see us in many new avatars over time; Each more beautiful and vibrant than the last! These are the milestones on our journey, where every experience is an adventure!</p>
+          <p>Transcend the Usual.</p>
+          <p>Here at Eternal Expression, we do it every day!</p>
+        </div>
+      </section>
+    </amp-accordion>
+    <p class="btn-desc">Who we are? Read More About us ☝</p>
+
+    <!-- ## Search Website -->
+  </div>
+
+
+  <h2>Website Search</h2>
+  <div>
+    <amp-state id="generalInventory">
+      <script type="application/json">
+        {
+          "items": [{
+            "name": "apple",
+            "emoji": "🍎",
+            "price": "$1"
+          }, {
+            "name": "grapes",
+            "emoji": "🍇",
+            "price": "$2"
+          }, {
+            "name": "whole milk",
+            "emoji": "🥛",
+            "price": "$4"
+          }, {
+            "name": "banana",
+            "emoji": "🍌",
+            "price": "$0.50"
+          }]
+        }
+      </script>
+    </amp-state>
+    <form class="sample-form" method="post" action-xhr="https://amp.dev/documentation/examples/api/echo" target="_top">
+      <amp-autocomplete filter="substring" min-characters="0" filter-value="name" [src]="manualFilterData">
+        <input type="search" name="product" on="input-debounced:AMP.setState({ manualFilterData: event.value.length == 0 ?
+            initialInventory : generalInventory })">
+        <amp-state id="initialInventory">
+          <script type="application/json">
+            {
+              "items": [{
+                "isInitial": "true",
+                "name": "apple"
+              }, {
+                "isInitial": "true",
+                "name": "grapes"
+              }, {
+                "isInitial": "true",
+                "name": "whole milk"
+              }, {
+                "isInitial": "true",
+                "name": "banana"
+              }]
+            }
+          </script>
+        </amp-state>
+        <template type="amp-mustache">
+          {{#isInitial}}
+            <div class="product" data-value="{{name}}">
+              <amp-img class="trending" width="24" height="24" src="https://preview.amp.dev/static/samples/img/trending.png"></amp-img>
+              <span class="name-and-description">{{name}}</span>
+            </div>
+          {{/isInitial}}
+          {{^isInitial}}
+            <div data-value="{{name}}" class="product">
+              <div class="name-and-description">
+                <div class="product-name">{{emoji}} <b>{{name}}</b> <i>{{price}}</i></div>
+              </div>
+            </div>
+          {{/isInitial}}
+        </template>
+      </amp-autocomplete>
+      <input type="submit" value="Search">
+      <div submit-success>
+        <template type="amp-mustache">
+          Success! Added <strong>{{product}}</strong> to your cart.
+        </template>
+      </div>
+      <div submit-error>
+        Error!
+      </div>
+    </form>
+  </div>
+  <div style="width: 333px; height: 333px; margin: -6px auto -109px auto;">
+    <amp-bodymovin-animation id="animation4" layout="responsive" width="333" height="333" noautoplay src="https://assets9.lottiefiles.com/packages/lf20_mgojh9bd.json" loop="false">
+    </amp-bodymovin-animation>
+    <amp-position-observer on="scroll:animation4.seekTo(percent=event.percent)" intersection-ratios=".69" layout="nodisplay">
+    </amp-position-observer>
+  </div>
+  <amp-youtube width="480" height="360" layout="responsive" data-videoid="qO5uNqvaKx4" data-param-listType="playlist" data-param-list="PL4wWs8q_P82isHhyFtiaSkL7XaPRevebh">
+  </amp-youtube>
+  <div style="color:#696969; background-color:white; border: 6px white outset; border-radius:33px;padding-bottom:69px;">
+    <!-- ## The Team -->
+    <div style="width: 90%; text-align: center; margin:auto;">
+      <h2>THE TEAM</h2>
+      <h4>THE MOST QUALIFIED (LOVED) TATTOO & PIERCING CREW IN BANGALORE</h4>
+      <div class="team-ee">
+        <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/bangalore-tattoo-artist-veer-hegde.webp" width="600" height="600" layout="responsive" alt="AMP"></amp-img>
+      </div>
+      <div style="text-align: left; letter-spacing: .169em;">
+        <h3>VEER HEGDE</h3>
+        <p style="font-size: 10.96px; letter-spacing: .196px; font-weight: 300; margin-top: -9px;">The Founder CEO, Tattoo Artist & Piercing Master</p>
+        <div class="team-ee">
+          <amp-img src="https://www.tattoobangalore.com/wp-content/uploads/lata-hegde-medical-officer.webp" width="600" height="600" layout="responsive" alt="AMP"></amp-img>
+        </div>
+        <div style="text-align: right; letter-spacing: .169em;">
+          <h3>LATA HEGDE</h3>
+          <p style="font-size: 10.96px; letter-spacing: .196px; font-weight: 300; margin-top: -9px;">Medical Supervisor, Process Coordinator & Studio Manager</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ## The Venue -->
+  <div class="venue">
+    <h2>THE VENUE</h2>
+    <h4>WHERE ARE WE LOCATED?</h4>
+    <amp-iframe width="600" height="400" title="Map to the Best Tattoo Artist in Bangalore: Eternal Expression Tattoo & Piercing Studio" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAgmQjwfKWks-NMeqbjrv4s08qVxCZaBd8&q=Eternal%20Expression%20Tattoo#amp=1">
+    </amp-iframe>
+    <div>
+      <div class="btn directions"><a href="https://www.google.com/maps/dir//Eternal+Expression+Tattoo+%26+Piercing+Studio/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae142abbd24717:0x46d5d6f6cc243cf8!2m2!1d77.6071533!2d12.966488499999999" target="_blank" class="btn-txt">GET DIRECTIONS<i class="ico-pic icon-directions"></i></a></div>
+      <p class="btn-desc">Follow perfectly accurate directions while you head over to our studio after a Booking Confirmation</p>
+    </div>
+  </div>
+  <!-- ## CTA -->
+  <div class="cta" style="text-align: center;">
+    <h2 style="color: #bd0916; line-height: 1.096em; text-shadow: -1.69px -1.69px .619px #ff3737,1.69px 1.69px .619px #530d03;">Join over 5,000 Happy customers from Bangalore, India &amp; around the world!</h2>
+    <div style="background: linear-gradient(180deg,rgba(255,233,0,.84),rgba(144,97,9,.78)); padding:19px; width:80%; margin:auto; border-radius:19px;border-bottom: 3px groove #ffa109;">
+      <div class="btn bookings"><a href="https://www.google.com/maps/dir//Eternal+Expression+Tattoo+%26+Piercing+Studio/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae142abbd24717:0x46d5d6f6cc243cf8!2m2!1d77.6071533!2d12.966488499999999" target="_blank" class="btn-txt">BOOK NOW<i class="ico-pic icon-directions"></i></a></div>
+      <p class="btn-desc">For Alchemic Tattoos & Esoteric Piercings</p>
+    </div>
+    <!-- ## USP -->
+    <div style="text-align: center; margin:auto; background:white;">
+      <h2 style="color: #ffd700;">OUR USP</h2>
+      <h4 style="max-width:69%; margin:auto;">WHAT MAKES US THE BEST CHOICE FOR YOUR NEXT TATTOO OR PIERCING</h4>
+      <div style="text-align: left; width:90%; margin:auto; font-weight:400;">
+        ☑ Exceptional Tattoo & Piercing skills with experience of over a decade!
+        <br>☑ 100% original tattoo designs, never repeated!
+        <br>☑ 1st Medical Grade Tattoo Studio of India!
+        <br>☑ Full-time Para-Medical Staff onboard
+        <br>☑ State of the Art Tattoo Equipment
+        <br>☑ Family Friendly Creative Studio
+        <br>☑ World-class Infrastructure with parking
+        <br>☑ Located in the Heart of Bangalore City
+        <br>☑ Highly acclaimed Tattoo & Piercing set up in the country!
+      </div>
+      <!-- ## WORKING HOURS -->
+      <h2 style="color: #c1c1c1;">WORKING HOURS</h2>
+      <h4>BY APPOINTMENT ONLY</h4>
+      <div class="workhours">
+        <div id="weekday">Mo</div>
+        <div id="weekday">Tu</div>
+        <div id="weekday">We</div>
+        <div id="weekday">Th</div>
+        <div id="weekday">Fr</div>
+        <div id="weekday">Sa</div>
+        <div id="weekday">Su</div>
+      </div>
+      <div class="worktime">10:00 AM-10:00 PM</div>
+    </div>
+    <!-- ## PRICING -->
+    <div class="price-chart">
+
+      <h2 style="color:white;">Prices</h2>
+      <h4 style="color:white;">Tattoo &amp; Piercing Price Chart</h4>
+      <div class="pri-mod">
+        <h4 style="color:white;font-size:19px;letter-spacing:.1069em;">Tattoos</h4>
+        <div class="pri-recom"><span class="pri-recom2">By Lead Tattooist</span></div>
+        <span class="pri-lbl" style="font-size:49px;">₹2500</span>
+        <br><span class="pri-desc">Onwards</span>
+        <div><br><a href="https://api.whatsapp.com/send?phone=919742863993&amp;text=Hey%20Eternal%20Expression!%20What%20is%20the%20cost%20for%20a%20Tattoo?" target="_blank" class="btn enquire">ENQUIRE</a></div>
+        <div style="letter-spacing: .1906em; padding:19px;">
+          <p>All kinds of Tattoos</p>
+        </div>
+      </div>
+      <div class="pri-mod">
+        <h4 style="color:white;font-size:19px;letter-spacing:.1069em;">Piercing</h4>
+        <span class="pri-recom">By Lead Piercer</span>
+        <span class="pri-lbl" style="font-size:49px;">₹1000</span>
+        <br><span class="pri-desc" style="margin:0px 49px;">Onwards</span>
+        <div><br><a href="https://api.whatsapp.com/send?phone=919742863993&amp;text=Hey%20Eternal%20Expression!%20What%20is%20the%20cost%20for%20a%20Tattoo?" target="_blank" class="btn enquire">ENQUIRE</a></div>
+        <div style="letter-spacing: .1906em; padding:19px;">
+          <p>All kinds of Piercing</p>
+        </div>
+      </div>
+    </div>
+    <!-- ## FAQ -->
+    <div style="background-color: #2f2f2f;">
+      <h2 style="color: #c1c1c1;">FAQ</h2>
+      <h4 style="color: #c1c1c1;">MOST FREQUENTLY ASKED QUESTIONS & ANSWERS</h4>
+      <amp-accordion animate>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">Will you help me with the Tattoo design?</h5>
+          <div class="acc-desc" id="">Yes! Until we make a jaw-dropping design that you connect with and will love for life! Read <a href="https://www.tattoobangalore.com/eternal-expression-tattoo-bangalore/ask-your-tattoo-artist-for-a-design/">The Ultimate Guide to arrive at the Best Tattoo Design for yourself! : written by Veer Hegde, the Best Tattoo Artist In Bangalore &amp; India. </a> It will give you a route map and blueprint on arriving at the most beautiful tattoo design that you can imagine! You can also refer to other Tattooing Subjects to broaden your spectrum on Tattooing Ideas. To get a deeper understanding and to learn about the Age-old Tattooing Culture and its timeless philosophy. Do read our <a href="https://www.tattoobangalore.com/tattoo-blog/">Tattoo-Blog</a><br> </div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">How much would it cost to get a permanent Tattoo in Bangalore?</h5>
+          <div class="acc-desc" id="">The Cost of a permanent tattoo, like any other work of art, depends on<br> + Experience of the Artist<br> + The skill of the Tattooist<br> + The scale of the Tattoo-Work involved<br> + The intricacy of the piece!<br> <br> Based on the theme and the exact size. The artist should be able to give you a ballpark figure about the price of the tattoo. Make sure that you are ok with the price before finalizing the design! Sometimes what can take hours of work! So most artists take a token advance after the initial quote before continuing work on the developing design!<br> <br> At Eternal Expression, the Base-Price is ₹2500!</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">Who are the Best Tattoo Artists in Bangalore?</h5>
+          <div class="acc-desc" id="">There are multiple posts and articles on the Internet regarding the best artists or best tattoo artists in a city or country!<br> But art or an artist cannot be calibrated in terms of who is better than another! Especially when it comes to a broad platform like the arts! <br> <br> A matter of personal taste and choice! <br> One should choose wisely on who should leave a permanent mark on their skin!<br> Factors like Attention to Detail, Personalized Custom Design, Jaw-dropping Tattoos that captivate the viewer! Receiving, Endless appreciation &amp; compliments from people all around!<br> On how Mesmerizingly beautiful the tattoos are!<br> That is what sets the tattoo-work of Veer Hegde apart!<br> Tattoo art that any art lover or appreciator of beautiful things instantly connects with, making one feel an immense sense of attraction!<br> One can be the best only when people connect with the tattoo art spontaneously and are touched or influenced by the works of art!<br> Veer Hegde, of Eternal Expression Tattoo &amp; Piercing Studio.<br> a.k.a the Best Tattoo Artist In Bangalore and India for his style that instantly connects with the viewer and brings out the best in the bearer! All his works have been original works of art! Some of which other artists have tried to replicate. Which immediately confirms the global appeal and admiration for his tattooing skills!</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">How much does a small tattoo cost in India?</h5>
+          <div class="acc-desc" id="">Small tattoos can cost from hundreds to thousands depending on the studio, the artist, the skills, the intricacy of the piece etc. Small tattoos usually would incur the base charge since it requires a new hygienic setup of tools, tattoo inks, tattoo needles etc.<br> At Eternal Expression, we have a base price of ₹2500 for a tattoo. One could even get a pair of small tattoos at this minimum price! For more information <a href="https://www.tattoobangalore.com/tattoo-bangalore-contact-us/">Contact-Us</a></div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">How Old Do I Have To Be To Get A Tattoo?</h5>
+          <div class="acc-desc" id="">We do not Tattoo anyone who is not at least 18 years of age. We have a strict No Minors policy. Not only must you be 18, you have to prove it with a valid National ID. No exceptions.</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">HOW MUCH DOES A TATTOO COST?</h5>
+          <div class="acc-desc" id=""> Our MINIMUM charge for a Tattoo is 2500. Although, the final price varies depending on the intricacy, size, design and body part! </div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">HOW CAN I GET A PRICE QUOTE?</h5>
+          <div class="acc-desc" id="">The best way to get a ball-park figure is by describing details of what you want. You could also share reference images on WhatsApp or email explaining what you have decided to get inked. We will then give you an approximate cost.<br> Once the Price range is clear and briefly understood, the next would be to go ahead and make a booking for the design consultation with the artist. To give you a quote on your idea, we need to consider: the subject, size, placement on the body, detail, etc.<br> So after the Tattoo design to the finest detail, the Exact Location of the Tattoo and the size is final! You will receive the exact value of the piece!<br> You are always welcome to come into the shop and talk with one of our assistants or artists after you have a confirmed appointment! We’re always more than happy to assist you with any information you need!</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">DOES IT HURT?</h5>
+          <div class="acc-desc" id="">Yes! But in a good way. The pain is considered lesser than a paper cut, waxing or getting eyebrows done. While getting tattooed is more of a long process of persistent scratching on the surface of the skin, Your brain releases adrenalin and endorphins when you go through this pain, and the body loves endorphins. So yes, it hurts, but in a way that it gives you a high!</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">HOW LONG DOES A TATTOO TAKE TO HEAL?</h5>
+          <div class="acc-desc" id="">It takes one or two weeks for a fresh tattoo to “heal,” but it takes 1-2 months for the skin to Fully regenerate! But, that depends on the skin type, health and condition. It might take more than a few months for some people since everyone has different types of skin!</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">HOW DO I CARE FOR MY NEW TATTOO?</h5>
+          <div class="acc-desc" id="">Eternal Expression has its own recommended tattoo care methods. You will receive detailed instructions on the best practices of tattoo aftercare immediately after you’ve got tattooed! Also, read Tattoo Aftercare! </div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">WHAT FORMS OF PAYMENT ARE ACCEPTED?</h5>
+          <div class="acc-desc" id="">We accept cash or online transaction payments (GooglePay, Paytm, Phonepay, BHIM). No checks or cards!</div>
+        </section>
+        <section>
+          <h5 class="acc-lbl" id="" role="button">DO I NEED TO LEAVE A DEPOSIT IF I DECIDE TO SCHEDULE AN APPOINTMENT?</h5>
+          <div class="acc-desc" id="">Yes. A deposit is required to set up an appointment! Since working on the final design will include a considerable amount of work and time dedication from the artist! When we confirm an appointment time, it technically means we will not be taking any other commitments at that same time! The deposits, therefore, are non-refundable and non-transferable and will be deducted from the final price of your tattoo! </div>
+        </section>
+      </amp-accordion>
+
+      <div style="background-color: black;">
+        <h2 style="color: #c1c1c1;">Contact Info</h2>
+        <h4 style="color: #c1c1c1;">Address : 91, Richmond Rd, Ashok Nagar, Bangalore 560025</h4>
+
+        <h4 style="color: #c1c1c1;">Phone : 9742863993 </h4>
+
+        <h4 style="color: #c1c1c1;">Email : veer@tattoobangalore.com</h4>
+
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="footer">
+        <footer amp-fx="float-in-bottom">
+          <amp-selector class="toolbar nav-bar bottom" on="select:AMP.setState({tabs:event.targetOption})">
+            <div option=0>
+              <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/tattoo-in-bangalore.webp"></amp-img>
+              <br>Tattoo
+            </div>
+            <div option=1>
+              <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/piercing-in-bangalore.webp"></amp-img>
+              <br>Piercing
+            </div>
+            <div option=2>
+              <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/scalp-micro-pigmentation-bangalore.webp"></amp-img>
+              <br>Cosmetic
+            </div>
+            <div option=3>
+              <amp-img width="69px" height="69px" src="https://www.tattoobangalore.com/wp-content/uploads/best-tattoo-training-academy-bangalore.webp"></amp-img>
+              <br>Training
+            </div>
+          </amp-selector>
+        </footer>
+      </div>
+</body>
+</html>
